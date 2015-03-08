@@ -10,9 +10,9 @@
        "remote": the remote host from above (if not the default)
        "revision": commitish to checkout (if not the default)
        "path": directory where git repository gets cloned/synced -->
-  <project name="poky"               revision="refs/heads/dylan" remote="yocto" />
-  <project name="meta-openembedded"  revision="refs/heads/dylan" remote="oe"        path="poky/meta-openembedded" />
-  <project name="meta-fsl-arm"       revision="refs/heads/dylan" remote="yocto"     path="poky/meta-fsl-arm" />
-  <project name="meta-fsl-arm-extra" revision="refs/heads/dylan" remote="freescale" path="poky/meta-fsl-arm-extra" />
+  <project name="poky"               revision="refs/heads/dizzy" remote="yocto" />
+  <project name="meta-openembedded"  revision="refs/heads/dizzy" remote="oe"        path="poky/meta-openembedded" />
+  <project name="meta-fsl-arm"       revision="refs/heads/dizzy" remote="yocto"     path="poky/meta-fsl-arm" />
+  <project name="meta-fsl-arm-extra" revision="refs/heads/dizzy" remote="freescale" path="poky/meta-fsl-arm-extra" />
 </manifest>
 
