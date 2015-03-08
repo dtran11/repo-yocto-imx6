@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- You can have as many remote repositories as you like -->  
+  <remote name="yocto"     fetch="git://git.yoctoproject.org" />
+  <remote name="oe"        fetch="git://git.openembedded.org" />
+  <remote name="freescale" fetch="git://github.com/Freescale" />
+  
+  <!-- List all the repositories you want to fetch -->
+  <!-- "name": git repository's name on hosting server
+       "remote": the remote host from above (if not the default)
+       "revision": commitish to checkout (if not the default)
+       "path": directory where git repository gets cloned/synced -->
+  <project name="poky"               revision="refs/heads/dylan" remote="yocto" />
+  <project name="meta-openembedded"  revision="refs/heads/dylan" remote="oe"        path="poky/meta-openembedded" />
+  <project name="meta-fsl-arm"       revision="refs/heads/dylan" remote="yocto"     path="poky/meta-fsl-arm" />
+  <project name="meta-fsl-arm-extra" revision="refs/heads/dylan" remote="freescale" path="poky/meta-fsl-arm-extra" />
+</manifest>
+
