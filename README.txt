@@ -20,7 +20,8 @@ Yocto Build
 
 2) Type: export MACHINE="${MY_MACHINE}"	
 	
-3) Type: bitbake console-image
+3) Type: bitbake console-image         OR
+         bitbake core-image-sato
 
 4) Wait for image to build (first time will take several hours)
 
