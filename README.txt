@@ -27,3 +27,19 @@ Yocto Build
 
 4) Images are at "~/poky/build/tmp/deploy/images
 
+
+IMX6 SD Partition
+-----------------
+
+SPL should be written at offset 1KB
+
+   sudo dd if=SPL of=/dev/sdX bs=1K seek=1
+   
+U-Boot should be written with 69 blocks offset
+
+   sudo dd if=u-boot.img of=/dev/sdX bs=1K seek=69
+   
+Create a BOOT FAT32 partition with offset 4MB of size 8MB
+
+Create EXT4 partition after the BOOT partition
+
