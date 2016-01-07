@@ -16,7 +16,7 @@
   <project name="meta-openembedded"  revision="refs/heads/jethro" remote="oe"        path="poky/meta-openembedded" />
   <project name="meta-fsl-arm"       revision="refs/heads/jethro" remote="yocto"     path="poky/meta-fsl-arm" />
   <project name="meta-fsl-arm-extra" revision="refs/heads/jethro" remote="freescale" path="poky/meta-fsl-arm-extra" />
-  <project name="meta-fsl-arm-demos" revision="refs/heads/jethro" remote="freescale" path="poky/meta-fsl-arm-demos" />
+  <project name="meta-fsl-demos"     revision="refs/heads/jethro" remote="freescale" path="poky/meta-fsl-demos" />
   <project name="meta-qt5"           revision="refs/heads/jethro" remote="qt5"       path="poky/meta-qt5" />
   
   <project name="yocto-conf-imx6"    revision="refs/heads/jethro" remote="dtran11"   path="poky/build/conf" />
