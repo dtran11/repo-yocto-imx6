@@ -15,6 +15,7 @@
        "remote": the remote host from above (if not the default)
        "revision": commitish to checkout (if not the default)
        "path": directory where git repository gets cloned/synced -->
+  <project name="meta-digi.git"             path="meta-digi"            remote="digi"       revision="jethro"/>
   <project name="meta-fsl-arm.git"          path="meta-fsl-arm"         remote="yocto"      revision="jethro"/>
   <project name="meta-fsl-arm-extra.git"    path="meta-fsl-arm-extra"   remote="fsl"        revision="jethro"/>
   <project name="meta-fsl-demos.git"        path="meta-fsl-demos"       remote="fsl"        revision="jethro"/>
@@ -22,5 +23,5 @@
   <project name="meta-qt5.git"              path="meta-qt5"             remote="qt5"        revision="jethro"/>
   <project name="poky.git"                  path="."                    remote="yocto"      revision="jethro"/>
   
-  <project name="yocto-conf-imx6"           path="build/conf"      remote="dtran11"    revision="jethro"/>
+  <project name="yocto-conf-imx6"           path="build/conf"           remote="dtran11"    revision="jethro"/>
 </manifest>
