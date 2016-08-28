@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <!-- You can have as many remote repositories as you like -->  
-  <remote name="yocto"     fetch="git://git.yoctoproject.org" />
-  <remote name="oe"        fetch="git://git.openembedded.org" />
-  <remote name="freescale" fetch="git://github.com/Freescale" />
-  <remote name="qt5"       fetch="git://github.com/meta-qt5" />
+  <default sync-j="4" revision="jethro"/>
+
+  <!-- Remote repositories -->
   <remote name="dtran11"   fetch="git://github.com/dtran11" />
-  
+  <remote name="digi"      fetch="git://github.com/digi-embedded"/>
+  <remote name="fsl"       fetch="git://github.com/Freescale" />
+  <remote name="qt5"       fetch="git://github.com/meta-qt5" />
+  <remote name="oe"        fetch="git://git.openembedded.org" />
+  <remote name="yocto"     fetch="git://git.yoctoproject.org" />
+
   <!-- List all the repositories you want to fetch -->
   <!-- "name": git repository's name on hosting server
        "remote": the remote host from above (if not the default)
        "revision": commitish to checkout (if not the default)
        "path": directory where git repository gets cloned/synced -->
-  <project name="poky"               revision="refs/heads/jethro" remote="yocto" />
-  <project name="meta-openembedded"  revision="refs/heads/jethro" remote="oe"        path="poky/meta-openembedded" />
-  <project name="meta-fsl-arm"       revision="refs/heads/jethro" remote="yocto"     path="poky/meta-fsl-arm" />
-  <project name="meta-fsl-arm-extra" revision="refs/heads/jethro" remote="freescale" path="poky/meta-fsl-arm-extra" />
-  <project name="meta-fsl-demos"     revision="refs/heads/jethro" remote="freescale" path="poky/meta-fsl-demos" />
-  <project name="meta-qt5"           revision="refs/heads/jethro" remote="qt5"       path="poky/meta-qt5" />
+  <project name="meta-fsl-arm.git"          path="meta-fsl-arm"         remote="yocto"      revision="jethro"/>
+  <project name="meta-fsl-arm-extra.git"    path="meta-fsl-arm-extra"   remote="fsl"        revision="jethro"/>
+  <project name="meta-fsl-demos.git"        path="meta-fsl-demos"       remote="fsl"        revision="jethro"/>
+  <project name="meta-openembedded.git"     path="meta-openembedded"    remote="oe"         revision="jethro"/>
+  <project name="meta-qt5.git"              path="meta-qt5"             remote="qt5"        revision="jethro"/>
+  <project name="poky.git"                  path="."                    remote="yocto"      revision="jethro"/>
   
-  <project name="yocto-conf-imx6"    revision="refs/heads/jethro" remote="dtran11"   path="poky/build/conf" />
+  <project name="yocto-conf-imx6"           path="build/conf"      remote="dtran11"    revision="jethro"/>
 </manifest>
-
